@@ -11,7 +11,7 @@ $navGebruiker = huidigeGebruiker($pdo);
             <a href="uitloggen.php">Uitloggen</a>
         <?php else: ?>
             <a href="inloggen.php">Inloggen</a>
-            <a href="registreren.php">Registreren</a>
+            <a href="Registreren.php">Registreren</a>
         <?php endif; ?>
     </div>
 </div>

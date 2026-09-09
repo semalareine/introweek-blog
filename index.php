@@ -17,7 +17,6 @@ function verwijderMediaBestand(PDO $pdo, int $id): void
 
 $gebruiker = huidigeGebruiker($pdo);
 
-// Posten, bewerken en verwijderen zijn alleen voor ingelogde gebruikers.
 $actieGevraagd = isset($_GET['nieuw']) || isset($_GET['bewerk']) || isset($_GET['verwijder']) || $_SERVER['REQUEST_METHOD'] === 'POST';
 if ($actieGevraagd && !$gebruiker) {
     header('Location: inloggen.php');
