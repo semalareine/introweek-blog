@@ -1,5 +1,4 @@
 <?php
-// Verwacht dat Config.php al geladen is (voor $pdo en de helper-functies).
 $navGebruiker = huidigeGebruiker($pdo);
 ?>
 <div class="nav">

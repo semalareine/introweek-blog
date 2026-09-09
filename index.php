@@ -1,7 +1,6 @@
 <?php
 
 require_once __DIR__ . '/Config.php';
-
 function verwijderMediaBestand(PDO $pdo, int $id): void
 {
     $ophalen = $pdo->prepare('SELECT media FROM post WHERE id = :id');
@@ -32,7 +31,6 @@ if (isset($_GET['verwijder'])) {
     $stmt->execute([':id' => $id]);
     $eigenaarId = $stmt->fetchColumn();
 
-    // Alleen de eigenaar mag zijn eigen bericht verwijderen.
     if ($eigenaarId !== false && (int) $eigenaarId === (int) $gebruiker['id']) {
         verwijderMediaBestand($pdo, $id);
         $verwijder = $pdo->prepare('DELETE FROM post WHERE id = :id');

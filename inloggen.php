@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 
-<?php require __DIR__ . '/nav.php'; ?>
+<?php require __DIR__ . '/Nav.php'; ?>
 
 <h1 class="auth-titel">Inloggen</h1>
 
