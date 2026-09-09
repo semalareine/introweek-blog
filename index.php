@@ -174,7 +174,7 @@ function formatteerDatum(string $datum): string
 </head>
 <body>
 
-<?php require __DIR__ . '/nav.php'; ?>
+<?php require __DIR__ . '/Nav.php'; ?>
 
 <?php if (!$toonFormulier): ?>
 
