@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </ul>
 <?php endif; ?>
 
-<form method="post" action="registreren.php">
+<form method="post" action="Registreren.php">
     <p>
         <label for="gebruikersnaam">Gebruikersnaam</label><br>
         <input type="text" id="gebruikersnaam" name="gebruikersnaam" value="<?= htmlspecialchars($_POST['gebruikersnaam'] ?? '') ?>">

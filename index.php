@@ -49,7 +49,6 @@ if ($bewerkId) {
     $ophalen->execute([':id' => $bewerkId]);
     $mogelijkRecord = $ophalen->fetch();
 
-    // Alleen de eigenaar mag zijn eigen bericht bewerken.
     if ($mogelijkRecord && (int) $mogelijkRecord['gebruiker_id'] === (int) $gebruiker['id']) {
         $bewerkRecord = $mogelijkRecord;
     } else {
@@ -153,9 +152,6 @@ $records = $pdo->query(
      ORDER BY post.id DESC'
 )->fetchAll();
 
-/**
- * Toont een datum/tijd zonder seconden, ongeacht of hij met of zonder seconden is opgeslagen.
- */
 function formatteerDatum(string $datum): string
 {
     $tijdstip = strtotime($datum);

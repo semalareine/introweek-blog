@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </p>
 </form>
 
-<p class="auth-wissel">Nog geen account? <a href="registreren.php">Registreer je</a>.</p>
+<p class="auth-wissel">Nog geen account? <a href="Registreren.php">Registreer je</a>.</p>
 
 </body>
 </html>
