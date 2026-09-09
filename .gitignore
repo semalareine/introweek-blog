@@ -1,0 +1,25 @@
+# SQLite database files
+post.sqlite
+*.sqlite
+*.sqlite3
+*.db
+
+# User uploaded content
+uploads/
+pfp/
+
+# Composer dependencies (if added later)
+/vendor/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# PHP session files (if stored locally)
+*.sess
